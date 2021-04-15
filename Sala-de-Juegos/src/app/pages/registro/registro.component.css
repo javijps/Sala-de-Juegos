@@ -1,0 +1,15 @@
+body{
+    /* FallaLogin */
+    background: url('src\wallpaperFallaLogin.jpg');
+	background-color: #444;
+    height: 100vh;
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
+
+.btn {
+    background-color: purple;
+}
+

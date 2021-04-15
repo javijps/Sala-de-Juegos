@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Registro</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" [(ngModel)]="usuario.nombre" placeholder="Nombre" name="nombre" type="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" [(ngModel)]="usuario.apellido" placeholder="Apellido" name="apellido" type="apellido" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" [(ngModel)]="usuario.edad" placeholder="Edad" name="edad" type="edad" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" [(ngModel)]="usuario.correo" placeholder="Correo" name="correo" type="correo" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Contraseña" [(ngModel)]="usuario.clave" name="contraseña"
+                                        type="contraseña" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Repetir Contraseña"
+                                        name="contraseñaRepetida" type="contraseñaRepetida" required>
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block" type="button" (click)=CrearUsuario() value="Enviar">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

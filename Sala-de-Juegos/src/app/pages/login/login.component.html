@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row vertical-offset-100 ">
+            <div class="col-md-5 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group  input-lg">
+                                    <label for="correo">Correo</label>
+                                    <input class="form-control" placeholder="Correo" [(ngModel)]="usuario.correo"  name="correo" type="text" required>
+                                </div>
+                                <div class="form-group  input-lg">
+                                    <label for="Contraseña">Contraseña</label>
+                                    <input class="form-control" placeholder="Contraseña" [(ngModel)]="usuario.clave"  name="contraseña"
+                                        type="contraseña" required>
+                                </div>
+                                <div class="form-group input-lg">
+                                    <p class="change_link"> Todavia no eres miembro?
+                                        <a href="registro">Registrate!</a>
+                                    </p>
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block  input-lg" (click)=Login() type="button" value="Login">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
